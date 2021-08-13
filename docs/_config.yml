@@ -25,15 +25,27 @@ url: "https://ma2ai.github.io" # the base hostname & protocol for your site, e.g
 github_username: ma2ai
 
 # Build settings
-markdown: kramdown
+
+include: ["_pages"]
+# permalink: /:title/
+
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
-  - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-archives
 
+# remote_theme: wowthemesnet/mediumish-theme-jekyll@81ab472
 remote_theme: wowthemesnet/mundana-theme-jekyll@cf3ec79
+
+# Syntax
+markdown: kramdown
+highlighter: rouge
+
+# Paginate
+paginate: 10
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -46,3 +58,30 @@ remote_theme: wowthemesnet/mundana-theme-jekyll@cf3ec79
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Defaults
+defaults:
+
+  # all posts
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      author: pvmilk
+      avatar: /assets/images/avatar1.jpg
+      
+  # all pages
+  - scope:
+      path: "_pages"
+    values:
+      layout: page
+ 
+authors:
+    pvmilk:
+      name:           Milk Phongtharin
+      site:           https://pvmilk.github.io
+      avatar:         /assets/images/avatar1.jpg
+      bio:            "Hello, I am Milk!"
+      # bio:            "Hello, I am Milk, the founder of mA2Ai!"
+      email:          pvmilk@gmail.com
+      twitter:        https://twitter.com/milLII3yway
