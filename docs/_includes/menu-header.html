@@ -1,11 +1,43 @@
 <!--  Replace menu links here -->
 
 <li class="nav-item">
-<a class="nav-link" href="{{site.baseurl}}/index.html">Home</a>
+  <a class="nav-link" href="{{site.baseurl}}/index.html">Home</a>
+</li>
+
+<!--
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Explore
+  </a>
+  <div class="dropdown-menu" aria-labelledby="navbarDropdown_">
+    {% assign categories_list = site.categories %}
+    {% if categories_list.first[0] != null %}
+      {% for category in categories_list %}
+        <a class="dropdown-item text-capitalize" href="{{site.baseurl}}/categories.html#{{ category[0] | url_escape | strip | downcase }}">{{ category[0] }}</a>
+      {% endfor %}
+    {% endif %}
+    {% assign categories_list = nil %}
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="{{site.baseurl}}/categories.html">All Categories</a>
+  </div>
+</li>
+-->
+
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownExplore"
+     role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Explore
+  </a>
+  <div class="dropdown-menu" aria-labelledby="navbarDropdownExplore">
+    <a class="dropdown-item" href="{{site.baseurl}}/categories.html">Categories</a>
+    <a class="dropdown-item" href="{{site.baseurl}}/tags.html">Tags</a>
+  </div>
+</li>
+
+
+<li class="nav-item">
+  <a class="nav-link" href="{{site.baseurl}}/authors-list.html">Authors</a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="{{site.baseurl}}/authors-list.html">Authors</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="{{site.baseurl}}/contact.html">Contact</a>
+  <a class="nav-link" href="{{site.baseurl}}/contact.html">Contact</a>
 </li>
