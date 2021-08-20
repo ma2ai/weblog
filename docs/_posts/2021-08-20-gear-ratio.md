@@ -16,7 +16,7 @@ The opposite if also true.
 
 <figure class="align-center">
   <a href="#"><img src="{{ '/assets/images/2021/08-20_gear-relationship.png' | absolute_url }}" alt=""></a>
-  <figcaption>Gearing Relationship [<a href="https://youtu.be/5IjG4iSJYQ4?t=271">reference</a>]. Note: The gear ration formula in the link might not be so accurate.</figcaption>
+  <figcaption>Gearing Relationship [<a href="https://youtu.be/5IjG4iSJYQ4?t=271">reference</a>]. Note: The gear ratio formula in the link might not be so accurate.</figcaption>
 </figure> 
 
 ## Gear Ratio
