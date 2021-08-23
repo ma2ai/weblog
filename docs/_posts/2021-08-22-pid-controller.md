@@ -4,6 +4,7 @@ title:  "PID Controller"
 author: pvmilk
 categories: [robotics]
 tags: [mathematic, engineering]
+image: assets/images/2021/08-22_block-diagram-wiki.svg
 ---
 
 Personally, I have been stump upon the word **PD** or **PID** controller many times in my education and career. My focus has never been on a control system, so every time I needed it, I would need to come back and study it again. I hope this blog post could be a article I can come back to when I would like to learn about the topic in the future :D.
